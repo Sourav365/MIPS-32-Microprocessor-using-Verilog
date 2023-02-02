@@ -69,7 +69,10 @@ for line in lines:
             encoded = SUBI + '{:05b}'.format(int(y[1][1:])) +\
             '{:05b}'.format(int(y[0][1:])) + '{:016b}'.format(int(y[2]));
                     
-        case 'SLTI' : encoded = SLTI
+        case 'SLTI' :       ##SLTI rt,rs,Imm_data => OPCODE | rs | rt | Imm_data
+            y=(x[2]).split(',');
+            encoded = SLTI + '{:05b}'.format(int(y[1][1:])) +\
+            '{:05b}'.format(int(y[0][1:])) + '{:016b}'.format(int(y[2]));
 
         case 'BNEQZ': encoded = BNEQZ
 
