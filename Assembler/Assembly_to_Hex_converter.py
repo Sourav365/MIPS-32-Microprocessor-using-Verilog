@@ -83,4 +83,5 @@ for line in lines:
     file_out.write(out)
     file_out.write('\n')
 
+file_in.close()
 file_out.close()
