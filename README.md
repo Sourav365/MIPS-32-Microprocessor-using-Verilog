@@ -5,6 +5,16 @@ Behavioral design of 5 stages pipelined MIPS-32 Microprocessor using Verilog cod
 
 <img width="1000" alt="image" src="https://github.com/Sourav365/MIPS-32-Microprocessor-using-Verilog/assets/49667585/0b208629-238a-4eac-9c5e-bfd2ac11370d">
 
+```
+create_clock -name clk1 -period 20 -waveform {5 10} [get_ports "clk1"]
+create_clock -name clk2 -period 20 -waveform {15 20} [get_ports "clk2"]
+```
+```
+-name     <clk_signal_name>
+-period   <Give clk period>
+-waveform {<Rise at>  <Fall at>}
+get_ports "<input clk variable name>"
+```
 ## Result 1
 <img width="250" alt="image" src="https://github.com/Sourav365/MIPS-32-Microprocessor-using-Verilog/assets/49667585/f3e093f8-60c0-40c9-8c25-940a3fff87eb">
 
